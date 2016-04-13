@@ -1,3 +1,10 @@
+---
+layout: default
+title: Example
+---
+
+
+
 # René Schönfelder
 
 ## About Me
