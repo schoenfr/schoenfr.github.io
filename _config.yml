@@ -2,4 +2,4 @@ name: ReneCV
 
 author: Rene
 
-markdown: redcarpet
+markdown: kramdown
