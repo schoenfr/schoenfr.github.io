@@ -3,8 +3,6 @@ layout: default
 title: Example
 ---
 
-
-
 # René Schönfelder
 
 ## About Me
@@ -23,4 +21,9 @@ I could list some **projects** here.
 
 ## Other
 
-Bla blub.
+> Bla blub.
+> sagte einst ein
+> weiser Mann
+> oder eine Frau
+> weiß nicht mehr
+
