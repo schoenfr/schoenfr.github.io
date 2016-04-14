@@ -4,9 +4,3 @@ author: Rene
 
 markdown: kramdown
 
-defaults:
-  -
-    scope:
-      path: ""
-    values:
-      layout: "default"
