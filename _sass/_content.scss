@@ -2,7 +2,7 @@
   max-width: 64rem;
   padding: 2rem 6rem;
   margin: 0 auto;
-  font-size: 1.8rem; 
+  font-size: 1.2rem; 
 }
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
@@ -35,24 +35,26 @@ p {
 }
 
 code {
-  padding: 2px 4px;
   font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-  font-size: 0.9rem;
   color: #348;
   background-color: #cdf;
   border-radius: 0.3rem;
+
+  padding: 2px 4px;
+  font-size: 0.9rem;
 }
 
 pre {
+  font: 1rem Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  color: #348;
+  background-color: #cdf;
+  border-radius: 0.3rem;
+
   padding: 0.8rem;
   margin-top: 0;
   margin-bottom: 1rem;
-  font: 1rem Consolas, "Liberation Mono", Menlo, Courier, monospace;
-  color: #348;
   word-wrap: normal;
-  background-color: #cdf;
   border: solid 1px #348;
-  border-radius: 0.3rem;
 }
 
 pre > code {
@@ -108,14 +110,14 @@ blockquote {
   margin-left: 0;
   color: #348;
   border-left: 0.3rem solid #cdf;
-}
 
-blockquote > :first-child {
-  margin-top: 0;
-}
-
-blockquote > :last-child {
-  margin-bottom: 0;
+  > :first-child {
+    margin-top: 0;
+  }
+  > :last-child {
+    background-color: red;
+    margin-bottom: 0;
+  }
 }
 
 table {
