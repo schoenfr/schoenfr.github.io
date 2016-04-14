@@ -6,6 +6,8 @@ title: Vita
 
 For now, this is just about trying out the mark down format.
 
+[Home](index.html)
+
 ## Projects
 
 I could list some **projects** here.
