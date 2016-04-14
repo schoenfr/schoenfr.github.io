@@ -1,11 +1,12 @@
 ---
 title: Example
-layout: default
 ---
 
 ## About Me
 
 For now, this is just about trying out the mark down format.
+
+asfasfasf
 
 ## Projects
 
