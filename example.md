@@ -2,9 +2,6 @@
 title: Example
 ---
 
-
-# René Schönfelder
-
 ## About Me
 
 For now, this is just about trying out the mark down format.
