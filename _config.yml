@@ -1,9 +1,6 @@
 name: ReneCV
-
 author: Rene
-
 markdown: kramdown
-
 defaults:
   -
     scope:
