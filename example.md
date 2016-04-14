@@ -1,12 +1,10 @@
 ---
-title: Example
+title: Vita
 ---
 
 ## About Me
 
 For now, this is just about trying out the mark down format.
-
-asfasfasf
 
 ## Projects
 
