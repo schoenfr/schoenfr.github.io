@@ -110,14 +110,6 @@ blockquote {
   margin-left: 0;
   color: #348;
   border-left: 0.3rem solid #cdf;
-
-  > :first-child {
-    margin-top: 0;
-  }
-  > :last-child {
-    background-color: red;
-    margin-bottom: 0;
-  }
 }
 
 table {
