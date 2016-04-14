@@ -1,3 +1,8 @@
+---
+title: Example
+---
+
+
 # René Schönfelder
 
 ## About Me
