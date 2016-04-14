@@ -3,6 +3,7 @@ name: ReneCV
 author: Rene
 
 markdown: kramdown
+  input: GFM
 
 defaults:
   -
