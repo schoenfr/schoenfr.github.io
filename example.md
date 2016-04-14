@@ -9,8 +9,6 @@ title: Example
 
 For now, this is just about trying out the mark down format.
 
-Chris Wanstrath (@defunkt)
-
 ## Projects
 
 I could list some **projects** here.
