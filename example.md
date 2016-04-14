@@ -1,5 +1,6 @@
 ---
 title: Example
+layout: default
 ---
 
 
