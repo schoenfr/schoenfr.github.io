@@ -18,6 +18,12 @@ I could list some **projects** here.
 - have published
 - some papers.
 
+-----
+
+- I also
+- have published
+- some papers.
+
 ## Other
 
 > Bla blub.
@@ -28,8 +34,18 @@ I could list some **projects** here.
 
 > Noch ein
 > Blockquote
->> Dieses mal mit 
->> Verschachtelung?
+
+## Code?
+
+Hallo Welt!
+
+```ruby
+require 'redcarpet'
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html
+```
+
+Hallo Welt!
 
 ## Math?
 

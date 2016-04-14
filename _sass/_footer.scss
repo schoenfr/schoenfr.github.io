@@ -1,32 +1,20 @@
-.site-footer {
+footer {
+
   padding-top: 2rem;
-  margin-top: 2rem;
-  border-top: solid 1px #eff0f1; 
-}
+  color: white;
+  border-top: solid 1px #eff0f1;
+  background-image: linear-gradient(30deg, $primary, $primary, $secondary);
 
-.site-footer-owner {
-  display: block;
-  font-weight: bold;
-}
-
-.site-footer-credits {
-  color: #819198;
-}
-
-@media screen and (min-width: 64em) {
-  .site-footer {
+  @media screen and (min-width: 64em) {
     font-size: 1rem;
   }
-}
 
-@media screen and (min-width: 42em) and (max-width: 64em) {
-  .site-footer {
+  @media screen and (min-width: 42em) and (max-width: 64em) {
     font-size: 1rem;
   }
-}
 
-@media screen and (max-width: 42em) {
-  .site-footer {
+  @media screen and (max-width: 42em) {
     font-size: 0.9rem; 
   }
+
 }
