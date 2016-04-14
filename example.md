@@ -30,6 +30,10 @@ I could list some **projects** here.
 ## Math?
 
 $$
+\[\bigoplus \alpha \left( walks_{v \to w} \right) \]
+$$
+
+$$
 \begin{align*}
   & \phi(x,y) = \phi \left(\sum_{i=1}^n x_ie_i, \sum_{j=1}^n y_je_j \right)
   = \sum_{i=1}^n \sum_{j=1}^n x_i y_j \phi(e_i, e_j) = \\
