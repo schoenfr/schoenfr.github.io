@@ -6,11 +6,11 @@ footer {
   background-image: linear-gradient(30deg, $primary, $primary, $secondary);
 
   .copyright {
-    padding-left: 1rem;
+    padding: 0.2rem 0.2rem 0 1rem;
     float: left;
   }
   .powered {
-    padding-right: 1rem;
+    padding: 0.2rem 1rem 0 0.2rem;
     float: right;
   }
 
