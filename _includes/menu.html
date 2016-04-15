@@ -1,0 +1,9 @@
+<ul>
+{% assign pages = site.pages | sort: "menu" %}
+{% for p in pages %}
+{% unless p.menu <= 0 %}
+<li><a href="{{p.url}}"{% if p.url == page.url %} class="selected"{% endif %}>{{p.title}}</a></li>
+
+{% endunless %}
+{% endfor %}
+</ul>

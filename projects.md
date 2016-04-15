@@ -1,30 +1,10 @@
 ---
-title: Vita
+title: Projects
+menu: 3
 ---
 
-## About Me
+My Projects
 
-For now, this is just about trying out the mark down format.
-
-[Home](index.html)
-
-## Projects
-
-I could list some **projects** here.
-
-## Academia
-
-- I also
-- have published
-- some papers.
-
------
-
-- I also
-- have published
-- some papers.
-
-## Other
 
 > Bla blub.
 > sagte einst ein
@@ -73,4 +53,5 @@ $$
     \end{array} \right)
 \end{align*}
 $$
+
 

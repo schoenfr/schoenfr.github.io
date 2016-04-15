@@ -1,4 +1,5 @@
 ---
+menu: 0
 ---
 
 $primary: #104;
@@ -19,7 +20,7 @@ html {
 body {
   @extend html;
   font-family: $stdfont;
-  line-height: 1.5;
+  line-height: 1.2;
   display: flex;
   flex-direction: column;
 }
