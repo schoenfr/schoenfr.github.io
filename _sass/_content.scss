@@ -26,28 +26,31 @@ main {
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @include background;
+    clear: both;
     font-size: 1rem;
     font-weight: normal;
-    padding: 0.25rem;
-    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
 
-    @media screen and (min-width: 64em) {
-      margin: 0 -1rem;
+    @media screen and (min-width: 42em) {
+      margin: 1rem -1rem;
     }
     @media screen and (max-width: 42em) {
       font-size: 1rem;
-      margin: 0;
+      margin: 1rem 0rem;
     }
   }
-  h2 { margin: 0 1rem; }
-  h3 { margin: 0 2rem; }
-  h4 { margin: 0 3rem; }
-  h5 { margin: 0 4rem; }
-  h6 { margin: 0 5rem; }
+  h1 {
+    @include background;
+    border-radius: 1rem;
+  }
+  h2 {
+    border: 1px solid $primary;
+    border-radius: 1rem;
+  }
 
   p {
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
   }
 
   code {
@@ -81,10 +84,6 @@ main {
     }
   }
 
-  ul, ol {
-    margin-top: 0;
-  }
-
   blockquote {
     padding: 0 1rem;
     margin-left: 0.5rem;
@@ -94,6 +93,7 @@ main {
   table {
     display: block;
     width: 100%;
+    margin: 1rem auto;
     overflow: auto;
     word-break: normal;
     word-break: keep-all;
@@ -108,20 +108,19 @@ main {
     border: 1px solid #e9ebec;
   }
 
-  dl {
-    padding: 0;
-  }
-
-  dl dt {
-    padding: 0;
-    margin-top: 1rem;
-    font-size: 1rem;
+  dl > dt {
+    margin: 1rem 0;
     font-weight: bold;
+    color: $primary;
   }
 
-  dl dd {
-    padding: 0;
-    margin-bottom: 1rem;
+  dl > dd {
+    margin-bottom: 0.5rem;
+    font-style: italic;
+  }
+
+  ul > li {
+    margin-bottom: 0.5rem;
   }
 
   hr {

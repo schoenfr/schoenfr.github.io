@@ -3,8 +3,15 @@ header {
   text-align: center;
   
   > h1 {
-    margin-top: 0;
-    margin-bottom: 0.1rem; 
+    margin: 1rem;
+  }
+
+  > div {
+    margin: 0 0 3rem 0;
+    > a {
+    color: $primarylight;
+    opacity: 0.8;
+    }
   }
 
   ul {
@@ -16,20 +23,16 @@ header {
       display:inline;
       > a {
         width: 10rem;
-      padding: 0.5rem;
-      display:inline-block;
+        padding: 0.5rem;
+        display:inline-block;
         opacity: 0.8;
         color: $secondarylight;
-      &.selected {
-        border-top: 1px solid $primarylight;
-        border-bottom: 1px solid $primarylight;
-      }
+        &.selected {
+          border-top: 1px solid $primarylight;
+          border-bottom: 1px solid $primarylight;
+        }
       }
     }
-  }
-
-  > h1, > a {
-    margin: 2rem;
   }
 
   @media screen and (min-width: 64em) {
@@ -61,4 +64,5 @@ header {
       font-size: 1rem; 
     }
   }
+
 }
