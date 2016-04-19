@@ -9,19 +9,15 @@ Welcome to my homepage. This site is currently under construction, but feel free
 
 ![René Schönfelder](img/portrait.jpg){:id="portrait"}
 
-Languages German and English
+You can contact me in german or english via
 
-Github: [github.com/schoenfr](http://github.com/schoenfr)
+| Email  | [schoenfelder2211@gmail.com](mailto:schoenfelder2211@gmail.com) |
+| Skype  | reneschoenfelder |
 
-Skype: reneschoenfelder
+or find me at
 
-Interests
-
-- Mathematics, especially Algebra and Graph Theory
-- Software Engineering and Verification
-- Project Management, Agile Development
-- Teaching and Mentoring
-- ... and my friends and family
+| Github | [schoenfr](http://github.com/schoenfr){:target="_blank"} |
+| XING | [René Schönfelder](http://www.xing.com/profile/Rene_Schoenfelder3){:target="_blank"} |
 
 # Education
 
@@ -31,12 +27,20 @@ Interests
 | 2009 | B.Sc. Computer Science - University of Lübeck <br> Thesis: Structural Properties of m-Step Graphs |
 {:class="vitatable"}
 
+# Interests
+
+- Mathematics, especially Algebra and Graph Theory
+- Software Engineering and Verification
+- Project Management, Agile Development
+- Teaching and Mentoring
+- ... and my friends and family
+
 # Experience
 
-WMD Vertrieb GmbH
-: Since 08/2015 I assist in the software development of WMD's xSuite365.
+WMD Vertrieb GmbH since 08/2015
+: As a software developer I assist with WMD's xSuite365.
 
-Green Navigation
+Green Navigation since 2011
 : As a doctoral student I have researched on routing algorithms for this project and supervised student projects and theses for four years.
 : Core technologies used: Java, Scala, GoLang, JavaScript, jQuery, Polymer, REST (Spring), OSM, Google Maps
 
@@ -51,7 +55,7 @@ Green Navigation
 
 - __René Schönfelder__, Martin Leucker (2015): <br> [Abstract Routing Models and Abstractions in the Context of Vehicle Routing](http://ijcai.org/Abstract/15/374){:target="_blank"}. <br> IJCAI - International Joint Conference on Artificial Intelligence, pp 2639-2645.
 - __René Schönfelder__, Martin Leucker, Sebastian Walther (2014): <br> [Efficient Profile Routing for Electric Vehicles](http://dx.doi.org/10.1007/978-3-319-11167-4_3){:target="_blank"}. <br> IOV - Internet of Vehicles, pp 21-30.
-- __René Schönfelder__, Martin Leucker (2011): <br> [Stochastisches Routen für Elektrofahrzeuge](http://www.offis.de/f_e_bereiche/energie/workshops/workshop_energieinformatik/energieinformatik_2011.html). <br> Workshop Energieinformatik, pp 45-51.
+- __René Schönfelder__, Martin Leucker (2011): <br> [Stochastisches Routen für Elektrofahrzeuge](http://www.offis.de/f_e_bereiche/energie/workshops/workshop_energieinformatik/energieinformatik_2011.html){:target="_blank"}. <br> Workshop Energieinformatik, pp 45-51.
 
 # Grants/Awards
 
@@ -59,6 +63,6 @@ Green Navigation
 - Capgemini award for the best master degree in computer science at the University of Lübeck (2011/2012).
 - Erasmus scholarship for an exchange semester at the University of Oslo (2011).
 
-# Extracurricular Activities
+# Other Activities
 
-- Arbeiterkind.de
+- [Arbeiterkind.de](http://arbeiterkind.de){:target="_blank"} (2011-2015)

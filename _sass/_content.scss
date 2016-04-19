@@ -98,12 +98,13 @@ main > div {
 
   table {
     display: block;
-    width: 100%;
-    overflow: auto;
-    word-break: normal;
-    word-break: keep-all;
+//    width: 100%;
+//    overflow: auto;
+//    min-width: 15rem;
+//    word-break: normal;
+//    word-break: keep-all;
     tbody, tr {
-      width: 100%;
+//      width: 100%;
     }
     th {
       font-weight: bold;

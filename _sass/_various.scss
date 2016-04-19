@@ -1,8 +1,8 @@
 #portrait {
+  @include shadow;
   float: right;
   width: 10rem;
   margin: 0 0 1rem 1rem;
-  @include shadow;
 
   @media screen and (max-width: 42em) {
     float: initial;
@@ -15,7 +15,8 @@
 .vitatable {
   tr > :first-child {
     width: 8rem;
-    text-align: center;
+    vertical-align: top;
+    text-align: right;
     @media screen and (max-width: 42em) {
       width: 6rem;
     }
