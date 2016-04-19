@@ -1,4 +1,8 @@
 main {
+  width: 100%;
+  @include innershadow;
+}
+main > div {
 
   @media screen and (min-width: 64em) {
     max-width: 64rem;
@@ -29,11 +33,11 @@ main {
     clear: both;
     font-size: 1rem;
     font-weight: normal;
-    padding: 0.5rem 1rem;
+    padding: 0.25rem 0.5rem;
     font-size: 1.25rem;
 
     @media screen and (min-width: 42em) {
-      margin: 1rem -1rem;
+      margin: 1rem -0.5rem;
     }
     @media screen and (max-width: 42em) {
       font-size: 1rem;
@@ -42,11 +46,12 @@ main {
   }
   h1 {
     @include background;
-    border-radius: 1rem;
+    @include shadow;
+    border-radius: 0.5rem;
   }
   h2 {
     border: 1px solid $primary;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
   }
 
   p {

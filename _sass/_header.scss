@@ -2,21 +2,22 @@ header {
   @include background;
   text-align: center;
   
-  > h1 {
+  #title {
     margin: 1rem;
   }
 
-  > div {
-    margin: 0 0 3rem 0;
+  #email {
+    margin: 1rem;
     > a {
-    color: $primarylight;
-    opacity: 0.8;
+      color: $primarylight;
+      opacity: 0.8;
     }
   }
 
   ul {
     list-style:none;
-    margin:0;
+    display: none;
+    margin: 3rem 0 0 0;
     padding:0;
     text-align:center;
     li {
@@ -37,31 +38,22 @@ header {
 
   @media screen and (min-width: 64em) {
     padding: 3rem 6rem; 
-    > h1 {
+    #title {
       font-size: 3.25rem; 
-    }
-    > a {
-      font-size: 1.25rem; 
     }
   }
 
   @media screen and (min-width: 42em) and (max-width: 64em) {
     padding: 2rem 3rem; 
-    > h1 {
+    #title {
       font-size: 2.25rem; 
-    }
-    > a {
-      font-size: 1.15rem; 
     }
   }
 
   @media screen and (max-width: 42em) {
     padding: 1rem 1rem; 
-    > h1 {
+    #title {
       font-size: 1.75rem; 
-    }
-    > a {
-      font-size: 1rem; 
     }
   }
 
