@@ -25,7 +25,7 @@ main > div {
     margin-top: 0;
   }
 
-  > img {
+  img {
     max-width: 100%;
   }
 
@@ -99,30 +99,28 @@ main > div {
   table {
     display: block;
     width: 100%;
-    margin: 1rem auto;
     overflow: auto;
     word-break: normal;
     word-break: keep-all;
-  }
-
-  table th {
-    font-weight: bold;
-  }
-
-  table th, table td {
-    padding: 0.5rem 1rem;
-    border: 1px solid #e9ebec;
+    tbody, tr {
+      width: 100%;
+    }
+    th {
+      font-weight: bold;
+    }
+    th, td {
+      padding: 0.25rem 0.75rem;
+    }
   }
 
   dl > dt {
     margin: 1rem 0;
-    font-weight: bold;
-    color: $primary;
+//    font-weight: bold;
   }
 
   dl > dd {
     margin-bottom: 0.5rem;
-    font-style: italic;
+//    font-style: italic;
   }
 
   ul > li {
@@ -135,6 +133,15 @@ main > div {
     margin: 1rem 0;
     background-color: $primarylight;
     border: 0;
+  }
+
+  @media print {
+    margin: 1.5cm;
+    font-size: 0.8rem;
+    h1 {
+      border-bottom: 1px solid $primary;
+      font-size: 1rem; 
+    }
   }
 
 }

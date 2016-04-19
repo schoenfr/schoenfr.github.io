@@ -11,3 +11,13 @@
     display: block;
   }
 }
+
+.vitatable {
+  tr > :first-child {
+    width: 8rem;
+    text-align: center;
+    @media screen and (max-width: 42em) {
+      width: 6rem;
+    }
+  }
+}

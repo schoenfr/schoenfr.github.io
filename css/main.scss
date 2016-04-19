@@ -2,9 +2,9 @@
 menu: 0
 ---
 
-$primary: #102;
+$primary: #103;
 $primaryalpha: #ddf;
-$secondary: #201;
+$secondary: #301;
 $secondaryalpha: #fdd;
 $primarylight: #def;
 $secondarylight: #fed;
@@ -23,15 +23,19 @@ $monofont: Consolas, "Liberation Mono", Menlo, Courier, monospace;
 }
 
 @mixin shadow {
-  -webkit-box-shadow: 2px 2px 8px 2px rgba(0,0,0,0.35);
-  -moz-box-shadow: 2px 2px 8px 2px rgba(0,0,0,0.35);
-  box-shadow: 2px 2px 8px 2px rgba(0,0,0,0.35);
+  @media screen {
+    -webkit-box-shadow: 2px 2px 8px 2px rgba(0,0,0,0.35);
+    -moz-box-shadow: 2px 2px 8px 2px rgba(0,0,0,0.35);
+    box-shadow: 2px 2px 8px 2px rgba(0,0,0,0.35);
+  }
 }
 
 @mixin innershadow {
-  -webkit-box-shadow: inset 2px 2px 8px 2px rgba(0,0,0,0.35);
-  -moz-box-shadow: inset 2px 2px 8px 2px rgba(0,0,0,0.35);
-  box-shadow: inset 2px 2px 8px 2px rgba(0,0,0,0.35);
+  @media screen {
+    -webkit-box-shadow: inset 2px 2px 8px 2px rgba(0,0,0,0.35);
+    -moz-box-shadow: inset 2px 2px 8px 2px rgba(0,0,0,0.35);
+    box-shadow: inset 2px 2px 8px 2px rgba(0,0,0,0.35);
+  }
 }
 
 html {
