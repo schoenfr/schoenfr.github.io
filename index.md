@@ -1,6 +1,7 @@
 ---
 title: Vita
 menu: 1
+icon: home
 imports:
  - paper-input
 ---

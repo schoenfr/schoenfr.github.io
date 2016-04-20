@@ -6,20 +6,29 @@ menu: 0
 
 body {
   font-family: 'Roboto', sans-serif;
+  margin: 0;
 }
-.content {
-  padding: 1rem;
+
+app-header {
+  background-image: url(../img/earth.jpg);
+  background-size: cover;
+  background-position: center;
+  color: $primarylight;
 }
-.content > :first-child {
-  margin-top: 0rem;
+.title {
+  text-align: center;
+  font-size: 1.8rem;
 }
 paper-toolbar.tall {
   background-color: transparent;
 }
+.content {
+  margin-top: 192px !important; /* 64 for each toolbar */
+}
 paper-toolbar > div .name {
   font-size: 2.5rem !important;
   margin: 0 auto;
-  font-weight: bold;
+  text-align: center;
 }
 paper-toolbar > div .bottom {
   font-size: 1rem !important;
@@ -34,3 +43,5 @@ paper-toolbar > div .bottom {
 @import "footer";
 
 @import "various";
+
+@import "menu";

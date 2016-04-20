@@ -11,35 +11,57 @@
   {% include polymerimports.html %}
 
   <style is="custom-style">
-    paper-scroll-header-panel {
-      position: absolute;
+    html, body {
+      height: 100%;
+    }
+    body {
+      display: flex;
+      flex-flow: column nowrap;
+    }
+    .content {
+      flex: 1;
+    }
+    app-header {
+      position: fixed;
       top: 0;
-      right: 0;
-      bottom: 0;
       left: 0;
-      --paper-scroll-header-panel-full-header: {
-        background-image: url(img/earth.jpg);
-      };
-      --paper-scroll-header-panel-condensed-header: {
-        background-image: url(img/earth.jpg);
-      };
+      width: 100%;
     }
   </style>
 
 </head>
-<body class="fullbleed layout vertical">
-  <paper-scroll-header-panel condenses header-height="256" condensed-header-height="64">
-    <paper-toolbar class="tall">
-      <div class="spacer"></div>
-      <paper-icon-button icon="search"></paper-icon-button>
-      <paper-icon-button icon="more-vert"></paper-icon-button>
-      <div class="middle name">René Schönfelder</div>
-      <div class="bottom email"><a href="mailto:schoenfelder2211@gmail.com">schoenfelder2211@gmail.com</a></div>
-    </paper-toolbar>
-    <div style="display: flex; height: 100%; flex-direction: column;">
-      <div class="content" style="flex: 1;">{{ content }}</div>
-      {% include footer.html %}
+<body>
+  <template is="dom-bind" id="app">
+    <app-header condenses reveals effects="waterfall">
+      <app-toolbar>
+        <paper-icon-button icon="menu" on-tap="toggle"></paper-icon-button>
+      </app-toolbar>
+      <app-toolbar></app-toolbar>
+      <app-toolbar><div title class="title">René Schönfelder</div></app-toolbar>
+    </app-header>
+
+    <app-drawer id="drawer">
+      {% include menu.html %}
+    </app-drawer>
+    <div class="content">
+      {{ content }}
     </div>
-  </paper-scroll-header-panel>
+  </template>
+    {% include footer.html %}
+<script>
+
+ (function(scope) {
+  scope.toggle = function() {
+    this.$.drawer.toggle();
+  };
+})(document.querySelector('#app'));
+
+//  var drawer = document.getElementById('drawer');
+//  document.getElementById('toggle').addEventListener('tap', function() {
+//      drawer.toggle();
+//  });
+
+</script>
+
 </body>
 </html>

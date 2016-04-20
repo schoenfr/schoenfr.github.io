@@ -1,9 +1,13 @@
-<ul>
+<div class="menu">
 {% assign pages = site.pages | sort: "menu" %}
 {% for p in pages %}
 {% unless p.menu <= 0 %}
-<li><a href="{{p.url}}"{% if p.url == page.url %} class="selected"{% endif %}>{{p.title}}</a></li>
-
+  <a href="{{p.url}}"{% if p.url == page.url %} class="selected"{% endif %}>
+    <paper-icon-item>
+      <iron-icon icon="{{p.icon}}" item-icon></iron-icon>
+      <span>{{p.title}}</span>
+    </paper-icon-item>
+  </a>
 {% endunless %}
 {% endfor %}
-</ul>
+</div>

@@ -1,0 +1,11 @@
+.menu {
+  a {
+    color: $primary;
+    text-decoration: none;
+  }
+
+  paper-icon-item:hover {
+    background-color: $primarylight;
+  }
+
+}

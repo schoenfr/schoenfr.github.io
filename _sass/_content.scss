@@ -37,7 +37,7 @@
     }
   }
   h1, h2 {
-    @include shadow;
+    // @include shadow;
     border-radius: 0.25rem;
     padding: 0.5rem 0.5rem;
   }
