@@ -1,24 +1,17 @@
-main {
-  width: 100%;
-  @include innershadow;
-}
-main > div {
+.content {
 
   @media screen and (min-width: 64em) {
     max-width: 64rem;
     padding: 2rem 6rem;
     margin: 0 auto;
-    font-size: 1.2rem; 
   }
 
   @media screen and (min-width: 42em) and (max-width: 64em) {
     padding: 2rem 4rem;
-    font-size: 1.1rem;
   }
 
   @media screen and (max-width: 42em) {
     padding: 1rem 1rem;
-    font-size: 1rem; 
   }
 
   :first-child {
@@ -31,11 +24,9 @@ main > div {
 
   h1, h2, h3, h4, h5, h6 {
     clear: both;
-    font-size: 1rem;
     font-weight: normal;
-    padding: 0.25rem 0.5rem;
     font-size: 1.25rem;
-    color: $primarylight;
+    color: $primary;
 
     @media screen and (min-width: 42em) {
       margin: 1rem -0.5rem;
@@ -45,18 +36,18 @@ main > div {
       margin: 1rem 0rem;
     }
   }
-  h1 {
-    @include background;
+  h1, h2 {
     @include shadow;
     border-radius: 0.25rem;
+    padding: 0.5rem 0.5rem;
   }
-  h2 {
-    border: 1px solid $primary;
-    border-radius: 0.25rem;
+  h1 {
+    @include background;
+    color: $primarylight;
   }
 
   p {
-    margin-bottom: 1rem;
+    margin: 1rem 0;
   }
 
   code {

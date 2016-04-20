@@ -1,0 +1,36 @@
+---
+menu: 0
+---
+
+@import "shared";
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+.content {
+  padding: 1rem;
+}
+.content > :first-child {
+  margin-top: 0rem;
+}
+paper-toolbar.tall {
+  background-color: transparent;
+}
+paper-toolbar > div .name {
+  font-size: 2.5rem !important;
+  margin: 0 auto;
+  font-weight: bold;
+}
+paper-toolbar > div .bottom {
+  font-size: 1rem !important;
+  margin: 0 auto;
+  > a {
+    color: $primarylight;
+    text-decoration: none;
+  }
+}
+
+@import "content";
+@import "footer";
+
+@import "various";

@@ -2,41 +2,7 @@
 menu: 0
 ---
 
-$primary: #103;
-$primaryalpha: #ddf;
-$secondary: #301;
-$secondaryalpha: #fdd;
-$primarylight: #def;
-$secondarylight: #fed;
-
-$stdfont: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$monofont: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-
-@mixin background {
-  background-image: linear-gradient(30deg, $primary, $primary, $secondary);
-  color: $primarylight;
-}
-
-@mixin backgroundlight {
-  background-image: linear-gradient(30deg, $primaryalpha, $primaryalpha, $primaryalpha, $secondary);
-  color: black;
-}
-
-@mixin shadow {
-  @media screen {
-    -webkit-box-shadow: 2px 2px 8px 2px rgba(0,0,0,0.35);
-    -moz-box-shadow: 2px 2px 8px 2px rgba(0,0,0,0.35);
-    box-shadow: 2px 2px 8px 2px rgba(0,0,0,0.35);
-  }
-}
-
-@mixin innershadow {
-  @media screen {
-    -webkit-box-shadow: inset 2px 2px 8px 2px rgba(0,0,0,0.35);
-    -moz-box-shadow: inset 2px 2px 8px 2px rgba(0,0,0,0.35);
-    box-shadow: inset 2px 2px 8px 2px rgba(0,0,0,0.35);
-  }
-}
+@import "shared";
 
 html {
   height: 100%;
@@ -64,6 +30,11 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+main {
+  width: 100%;
+  @include innershadow;
 }
 
 @import "header";

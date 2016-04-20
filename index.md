@@ -1,6 +1,8 @@
 ---
 title: Vita
 menu: 1
+imports:
+ - paper-input
 ---
 
 Welcome to my homepage. This site is currently under construction, but feel free to take a look around. It has started as an experiment with Jekyll on Github pages and will later become my representative homepage.

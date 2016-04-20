@@ -1,0 +1,10 @@
+<script src="http://rene.odyne.net/libs/webcomponentsjs/webcomponents.min.js"></script>
+
+<link rel="import" href="http://rene.odyne.net/libs/paper-scroll-header-panel/paper-scroll-header-panel.html">
+<link rel="import" href="http://rene.odyne.net/libs/paper-toolbar/paper-toolbar.html">
+<link rel="import" href="http://rene.odyne.net/libs/iron-icons/iron-icons.html">
+<link rel="import" href="http://rene.odyne.net/libs/paper-icon-button/paper-icon-button.html">
+
+{% for p in page.imports %}
+<link rel="import" href="http://rene.odyne.net/libs/{{p}}/{{p}}.html">
+{% endfor %}

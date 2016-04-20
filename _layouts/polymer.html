@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>René Schönfelder - {{ page.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/polymer.css" >
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+  {% include polymerimports.html %}
+
+  <style is="custom-style">
+    paper-scroll-header-panel {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      --paper-scroll-header-panel-full-header: {
+        background-image: url(img/earth.jpg);
+      };
+      --paper-scroll-header-panel-condensed-header: {
+        background-image: url(img/earth.jpg);
+      };
+    }
+  </style>
+
+</head>
+<body class="fullbleed layout vertical">
+  <paper-scroll-header-panel condenses header-height="256" condensed-header-height="64">
+    <paper-toolbar class="tall">
+      <div class="spacer"></div>
+      <paper-icon-button icon="search"></paper-icon-button>
+      <paper-icon-button icon="more-vert"></paper-icon-button>
+      <div class="middle name">René Schönfelder</div>
+      <div class="bottom email"><a href="mailto:schoenfelder2211@gmail.com">schoenfelder2211@gmail.com</a></div>
+    </paper-toolbar>
+    <div style="display: flex; height: 100%; flex-direction: column;">
+      <div class="content" style="flex: 1;">{{ content }}</div>
+      {% include footer.html %}
+    </div>
+  </paper-scroll-header-panel>
+</body>
+</html>
