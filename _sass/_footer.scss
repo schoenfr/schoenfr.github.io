@@ -9,21 +9,10 @@ footer {
   flex-wrap: wrap;
   align-items: flex-end;
   align-content: flex-end;
+  font-size: 1rem;
 
   .copyright, .powered {
     margin: 0.5rem;
-  }
-
-  @media screen and (min-width: 64em) {
-    font-size: 1rem;
-  }
-
-  @media screen and (min-width: 42em) and (max-width: 64em) {
-    font-size: 1rem;
-  }
-
-  @media screen and (max-width: 42em) {
-    font-size: 0.9rem; 
   }
 
 }

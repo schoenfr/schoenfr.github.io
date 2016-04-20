@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>René Schönfelder - {{ page.title }}</title>
+  <title>{{ page.title }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/polymer.css" >
   <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
@@ -37,7 +37,7 @@
         <paper-icon-button icon="menu" on-tap="toggle"></paper-icon-button>
       </app-toolbar>
       <app-toolbar></app-toolbar>
-      <app-toolbar><div title class="title">René Schönfelder</div></app-toolbar>
+      <app-toolbar><div title class="title">{{page.title}}</div></app-toolbar>
     </app-header>
 
     <app-drawer id="drawer">

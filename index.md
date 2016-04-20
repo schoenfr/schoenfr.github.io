@@ -1,5 +1,5 @@
 ---
-title: Vita
+title: René Schönfelder
 menu: 1
 icon: home
 imports:
