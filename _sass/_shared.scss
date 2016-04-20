@@ -10,7 +10,7 @@ $monofont: Consolas, "Liberation Mono", Menlo, Courier, monospace;
 
 @mixin background {
   color: $primarylight;
-  background-image: url(../img/earth.jpg);
+  background-image: url(../img/earth_small.jpg);
   background-size: cover;
 //  background-image: linear-gradient(30deg, $primary, $primary, $secondary);
 }
