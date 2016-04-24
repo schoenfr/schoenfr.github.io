@@ -1,20 +1,27 @@
+@import "responsive";
+
 .content {
 
-  @media screen and (min-width: 64em) {
-    max-width: 64rem;
-    padding: 2rem 6rem;
+  // 4rem for each toolbar
+  margin-top: 12rem !important;
+
+  @include print {
+    background-color: purple;
+  }
+
+  @include phone {
+    padding: 1rem 1rem;
+  }
+  @include tablet {
+    padding: 2rem 4rem;
+  }
+  @include desktop {
+    max-width: 1120px;
+    padding: 2rem 4rem;
     margin: 0 auto;
   }
 
-  @media screen and (min-width: 42em) and (max-width: 64em) {
-    padding: 2rem 4rem;
-  }
-
-  @media screen and (max-width: 42em) {
-    padding: 1rem 1rem;
-  }
-
-  :first-child {
+  > :first-child {
     margin-top: 0;
   }
 
@@ -27,25 +34,18 @@
     font-weight: normal;
     font-size: 1.25rem;
     color: $primary;
+    border-radius: 0.25rem;
+    padding: 0.5rem 0.25rem;
 
-    @media screen and (min-width: 42em) {
-      margin: 1rem -0.5rem;
-    }
-    @media screen and (max-width: 42em) {
+    @include phone {
       font-size: 1rem;
       margin: 1rem 0rem;
     }
-  }
-  h1, h2 {
-    // @include shadow;
-    border-radius: 0.25rem;
-    padding: 0.5rem 0.5rem;
   }
   h1 {
     @include background;
     color: $primarylight;
   }
-
   p {
     margin: 1rem 0;
   }
@@ -81,6 +81,11 @@
     }
   }
 
+  iron-icon {
+    padding: 0 0.5rem;
+    z-index: 0;
+  }
+
   blockquote {
     padding: 0 1rem;
     margin-left: 0.5rem;
@@ -89,14 +94,9 @@
 
   table {
     display: block;
-//    width: 100%;
 //    overflow: auto;
-//    min-width: 15rem;
 //    word-break: normal;
 //    word-break: keep-all;
-    tbody, tr {
-//      width: 100%;
-    }
     th {
       font-weight: bold;
     }
@@ -105,19 +105,11 @@
     }
   }
 
-  dl > dt {
-    margin: 1rem 0;
-//    font-weight: bold;
-  }
+  dl > dt { margin: 1rem 0; }
 
-  dl > dd {
-    margin-bottom: 0.5rem;
-//    font-style: italic;
-  }
+  dl > dd { margin-bottom: 0.5rem; }
 
-  ul > li {
-    margin-bottom: 0.5rem;
-  }
+  ul > li { margin-bottom: 0.5rem; }
 
   hr {
     height: 2px;

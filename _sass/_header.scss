@@ -1,61 +1,8 @@
-header {
+app-header {
   @include background;
+  background-position: center;
+}
+.title {
   text-align: center;
-  
-  #title {
-    margin: 1rem;
-    font-weight: bold;
-  }
-
-  #email {
-    margin: 1rem;
-    > a {
-      color: $primarylight;
-      opacity: 0.8;
-    }
-  }
-
-  ul {
-    list-style:none;
-    display: none;
-    margin: 3rem 0 0 0;
-    padding:0;
-    text-align:center;
-    li {
-      display:inline;
-      > a {
-        width: 10rem;
-        padding: 0.5rem;
-        display:inline-block;
-        opacity: 0.8;
-        color: $secondarylight;
-        &.selected {
-          border-top: 1px solid $primarylight;
-          border-bottom: 1px solid $primarylight;
-        }
-      }
-    }
-  }
-
-  @media screen and (min-width: 64em) {
-    padding: 3rem 6rem; 
-    #title {
-      font-size: 3.25rem; 
-    }
-  }
-
-  @media screen and (min-width: 42em) and (max-width: 64em) {
-    padding: 2rem 3rem; 
-    #title {
-      font-size: 2.25rem; 
-    }
-  }
-
-  @media screen and (max-width: 42em) {
-    padding: 1rem 1rem; 
-    #title {
-      font-size: 1.75rem; 
-    }
-  }
-
+  font-size: 1.8rem;
 }

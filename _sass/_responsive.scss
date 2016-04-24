@@ -1,0 +1,23 @@
+$break-small: 640px; // 40rem
+$break-large: 1120px; // 70rem
+
+@mixin print {
+	@media only print {
+		@content;
+	}
+}
+@mixin phone {
+	@media screen and (max-width: $break-small) {
+		@content;
+	}
+}
+@mixin tablet {
+	@media screen and (min-width: $break-small + 1px) and (max-width: $break-large - 1px) {
+		@content;
+	}
+}
+@mixin desktop {
+	@media screen and (min-width: $break-large) {
+		@content;
+	}
+}

@@ -1,3 +1,5 @@
+@import "responsive";
+
 footer {
 
   @include background;
@@ -13,6 +15,10 @@ footer {
 
   .copyright, .powered {
     margin: 0.5rem;
+  }
+
+  @include print {
+    display: none;
   }
 
 }

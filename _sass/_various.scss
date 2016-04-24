@@ -1,10 +1,11 @@
 #portrait {
+
   @include shadow;
   float: right;
   width: 10rem;
-  margin: 0 0 1rem 1rem;
+  margin: 0 1rem 1rem 1rem;
 
-  @media screen and (max-width: 42em) {
+  @include phone {
     float: initial;
     width: 10rem;
     margin: 0 auto;
@@ -13,11 +14,13 @@
 }
 
 .vitatable {
+  tr > * {
+    vertical-align: top;
+  }
   tr > :first-child {
     width: 8rem;
-    vertical-align: top;
     text-align: right;
-    @media screen and (max-width: 42em) {
+    @include phone {
       width: 6rem;
     }
   }
