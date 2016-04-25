@@ -40,7 +40,7 @@
   h1 { @include background; }
   p { margin: 1rem 0.5rem; }
 
-  div.highlight {
+  .highlight {
     font-family: $monofont;
     margin: 0 0.5rem;
     pre {
