@@ -1,12 +1,25 @@
 ---
-title: Academia
+title: Publications
 menu: 2
-icon: social:school
+icon: maps:local-library
 imports:
  - paper-input
 ---
 
-- __René Schönfelder__, Martin Leucker (2015): <br> [Abstract Routing Models and Abstractions in the Context of Vehicle Routing](http://ijcai.org/Abstract/15/374){:target="_blank"}. <br> IJCAI - International Joint Conference on Artificial Intelligence, pp 2639-2645.
-- __René Schönfelder__, Martin Leucker, Sebastian Walther (2014): <br> [Efficient Profile Routing for Electric Vehicles](http://dx.doi.org/10.1007/978-3-319-11167-4_3){:target="_blank"}. <br> IOV - Internet of Vehicles, pp 21-30.
-- __René Schönfelder__, Martin Leucker (2011): <br> [Stochastisches Routen für Elektrofahrzeuge](http://www.offis.de/f_e_bereiche/energie/workshops/workshop_energieinformatik/energieinformatik_2011.html){:target="_blank"}. <br> Workshop Energieinformatik, pp 45-51.
+{% for x in site.publications %}
 
+<div class="academia">
+<div class="thumb">
+<img src="{{x.thumb}}">
+</div>
+<div markdown="1" class="reference">
+
+{{x.author}} ({{x.year}}): <br>
+<a href="{{x.link}}" target="_blank">{{x.title}}</a>. <br>
+{{x.published}}, pp {{x.pages}}.
+
+{{x.content}}{:class="abstract"}
+</div>
+</div>
+
+{% endfor %}

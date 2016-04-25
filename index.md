@@ -6,7 +6,7 @@ imports:
  - iron-icon
 ---
 
-Welcome to my homepage. This site is currently under construction, but feel free to take a look around. It has started as an experiment with Jekyll on Github pages and will later become my representative homepage.
+Welcome to my homepage. This site is still __under construction__, but feel free to take a look around.
 
 # <iron-icon icon icon="account-circle" /> Personal
 
@@ -27,7 +27,7 @@ or find me at
 | Currently | University of Lübeck <br> Working on a PhD about Algebraic Routing for Green Navigation |
 | 2014 | Certificate for University Didactics - University of Lübeck |
 | 2012 | M.Sc. Computer Science - University of Lübeck <br> Thesis: [Stochastic Models and Acceleration Techniques for Green Routing in Car Navigation Systems](http://rene.odyne.net/resources/ma_schoenfelder.pdf){:target="_blank"} |
-| 2009 | B.Sc. Computer Science - University of Lübeck <br> Thesis: [Structural Properties of m-Step Graphs](http://rene.odyne.net/resources/ba_schoenfelder.pdf){:target="_blank"} |
+| 2009 | B.Sc. Computer Science - University of Lübeck <br> Thesis: Structural Properties of m-Step Graphs |
 {:class="vitatable"}
 
 # <iron-icon icon="favorite" /> Interests
@@ -40,12 +40,8 @@ or find me at
 
 # <iron-icon icon="places:business-center" /> Experience
 
-WMD Vertrieb GmbH since 08/2015
-: As a software developer I assist with WMD's xSuite365.
-
-Green Navigation since 2011
-: As a doctoral student I have researched on routing algorithms for this project and supervised student projects and theses for four years.
-: Core technologies used: Java, Scala, GoLang, JavaScript, jQuery, Polymer, REST (Spring), OSM, Google Maps
+| Since 2015 | [WMD Vertrieb GmbH](http://www.wmd.de/){:target="_blank"} |
+| 2011 - 2016 | [Green Navigation](http://www.isp.uni-luebeck.de/research/projects/green-navigation){:target="_blank"} |
 
 # <iron-icon icon="communication:forum" /> Teaching
 
@@ -78,13 +74,13 @@ Green Navigation since 2011
 </tbody>
 </table>
 
-Furthermore, I have assisted in 27 student theses, primarily around Green Navigation.
+Furthermore, I have assisted in a series of student theses and managed various practical courses, primarily around Green Navigation.
 
 # <iron-icon icon="maps:local-library" /> Publications
 
-- __René Schönfelder__, Martin Leucker (2015): <br> [Abstract Routing Models and Abstractions in the Context of Vehicle Routing](http://ijcai.org/Abstract/15/374){:target="_blank"}. <br> IJCAI - International Joint Conference on Artificial Intelligence, pp 2639-2645.
-- __René Schönfelder__, Martin Leucker, Sebastian Walther (2014): <br> [Efficient Profile Routing for Electric Vehicles](http://dx.doi.org/10.1007/978-3-319-11167-4_3){:target="_blank"}. <br> IOV - Internet of Vehicles, pp 21-30.
-- __René Schönfelder__, Martin Leucker (2011): <br> [Stochastisches Routen für Elektrofahrzeuge](http://www.offis.de/f_e_bereiche/energie/workshops/workshop_energieinformatik/energieinformatik_2011.html){:target="_blank"}. <br> Workshop Energieinformatik, pp 45-51.
+{% for x in site.publications %}
+- {{x.author}} ({{x.year}}): <br> <a href="{{x.link}}" target="_blank">{{x.title}}</a>. <br> {{x.published}}, pp {{x.pages}}.
+{% endfor %}
 
 # <iron-icon icon="grade" /> Grants/Awards
 

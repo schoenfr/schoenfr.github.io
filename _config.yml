@@ -8,6 +8,9 @@ defaults:
     values:
       layout: "polymer"
 
+collections:
+  - publications
+
 markdown: kramdown
 kramdown:
   input: GFM
