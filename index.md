@@ -70,7 +70,9 @@ Green Navigation since 2011
   <td label="Title">{{x.name}}</td>
   {% endif %}
   <td label="Type">{{x.type}}</td>
+  {% if x.lecturer %}
   <td label="Lecturer">{{x.lecturer}}</td>
+  {% endif %}
 </tr>
 {% endfor %}
 </tbody>
@@ -92,4 +94,4 @@ Furthermore, I have assisted in 27 student theses, primarily around Green Naviga
 
 # <iron-icon icon="more-horiz" /> Other Activities
 
-- [Arbeiterkind.de](http://arbeiterkind.de){:target="_blank"} (2011-2015)
+- [Arbeiterkind.de](http://arbeiterkind.de){:target="_blank"}, mentoring *first-generation students* (2011-2015).
