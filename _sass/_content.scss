@@ -40,7 +40,7 @@
   h1 { @include background; }
   p { margin: 1rem 0.5rem; }
 
-  div.code {
+  div.highlight {
     font-family: $monofont;
     margin: 0 0.5rem;
     pre {
@@ -50,10 +50,7 @@
       word-wrap: normal;
       overflow: auto;
       padding: 0.75rem;
-      border: solid 1px $primary;
-      .line-numbers {
-        display: none;
-      }
+      border: 1px solid $primarylight;
     }
   }
 

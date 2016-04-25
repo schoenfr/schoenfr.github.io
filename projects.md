@@ -28,19 +28,12 @@ print_hi('Tom')
 
 Hallo Welt!
 
-~~~ ruby
+{% highlight ruby %}
 require 'redcarpet' require 'redcarpet' require 'redcarpet' require 'redcarpet'
 markdown = Redcarpet.new("Hello World!")
 puts markdown.to_html
-~~~
+{% endhighlight %}
 
-Hallo Welt!
-
-``` ruby
-require 'redcarpet'
-markdown = Redcarpet.new("Hello World!")
-puts markdown.to_html
-```
 
 ### Abbreviation
 
