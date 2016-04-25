@@ -1,0 +1,21 @@
+.printtitle { display: none; }
+@include print {
+  .printtitle {
+  	display: block;
+  	text-align: center;
+  	font-size: 1.8rem;
+  }
+  .header {
+  	display: none;
+  }
+  .content{
+    margin: 1.5cm;
+    font-size: 0.8rem;
+    h1 {
+      border-bottom: 1px solid $primary;
+      font-size: 1rem; 
+      background: none;
+      color: $primary;
+    }
+  }
+}

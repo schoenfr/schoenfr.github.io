@@ -2,15 +2,24 @@
 menu: 0
 ---
 
-@import "shared";
+@import "responsive";
+
+@include print {
+  a {
+  	text-decoration: none !important;
+  	color: black !important;
+  }
+}
 
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
 }
 
+@import "shared";
 @import "header";
 @import "content";
 @import "footer";
 @import "various";
 @import "menu";
+@import "print";

@@ -3,31 +3,20 @@
 .content {
 
   // 4rem for each toolbar
-  margin-top: 12rem !important;
+  margin-top: 12rem;
 
-  @include print {
-    background-color: purple;
-  }
-
-  @include phone {
-    padding: 1rem 1rem;
-  }
-  @include tablet {
-    padding: 2rem 4rem;
-  }
+  @include phone { padding: 1rem 1rem; }
+  @include tablet { padding: 2rem 4rem; }
   @include desktop {
     max-width: 1120px;
-    padding: 2rem 4rem;
-    margin: 0 auto;
+    padding: 4rem 4rem;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  > :first-child {
-    margin-top: 0;
-  }
+  > :first-child { margin-top: 0; }
 
-  img {
-    max-width: 100%;
-  }
+  img { max-width: 100%; }
 
   h1, h2, h3, h4, h5, h6 {
     clear: both;
@@ -38,7 +27,10 @@
     border-radius: 0.25rem;
     padding: 0 0.25rem;
 
-    > iron-icon { padding-bottom: 4px; }
+    > iron-icon { 
+      padding: 0 0.5rem 3px 0.5rem;
+      z-index: 0;
+    }
 
     @include phone {
       font-size: 1rem;
@@ -77,11 +69,6 @@
       background: transparent;
       border: 0;
     }
-  }
-
-  iron-icon {
-    padding: 0 0.5rem;
-    z-index: 0;
   }
 
   blockquote {
@@ -145,15 +132,6 @@
     margin: 1rem 0;
     background-color: $primarylight;
     border: 0;
-  }
-
-  @media print {
-    margin: 1.5cm;
-    font-size: 0.8rem;
-    h1 {
-      border-bottom: 1px solid $primary;
-      font-size: 1rem; 
-    }
   }
 
 }

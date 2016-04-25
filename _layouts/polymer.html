@@ -31,7 +31,7 @@
 </head>
 <body class="fullbleed vertical layout">
   <template is="dom-bind" id="app">
-    <app-header condenses reveals shadow>
+    <app-header class="header" condenses reveals shadow>
       <app-toolbar>
         <paper-icon-button icon="menu" on-tap="toggle"></paper-icon-button>
         <div class="flex"></div>
@@ -43,10 +43,10 @@
       {% include menu.html %}
     </app-drawer>
     <div class="flex content">
+      <div class="printtitle">{{page.title}}</div>
       {{ content }}
     </div>
+    {% include footer.html %}
   </template>
-  {% include footer.html %}
-
 </body>
 </html>
