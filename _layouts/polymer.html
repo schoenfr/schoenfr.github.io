@@ -7,7 +7,11 @@
   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/polymer.css" >
 
   <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-  <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+ 
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(["Typeset",MathJax.Hub,"* /deep/ .content"]);
+</script>
+  <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
 
   {% include polymerimports.html %}
 
@@ -42,7 +46,7 @@
     <app-drawer id="drawer">
       {% include menu.html %}
     </app-drawer>
-    <div class="flex content">
+    <div id="content" class="flex content">
       <div class="printtitle">{{page.title}}</div>
       {{ content }}
     </div>

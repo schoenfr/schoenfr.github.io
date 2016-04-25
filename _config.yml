@@ -1,9 +1,17 @@
 name: ReneCV
 author: Rene
-markdown: kramdown
+
 defaults:
   -
     scope:
       path: ""
     values:
       layout: "polymer"
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighting: rouge
+
+highlighter: rouge

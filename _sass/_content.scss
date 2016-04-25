@@ -9,7 +9,7 @@
   @include tablet { padding: 2rem 4rem; }
   @include desktop {
     max-width: 1120px;
-    padding: 4rem 4rem;
+    padding: 2rem 4rem;
     margin-left: auto;
     margin-right: auto;
   }
@@ -38,36 +38,22 @@
     }
   }
   h1 { @include background; }
-  p { margin: 1rem 0; }
+  p { margin: 1rem 0.5rem; }
 
-  code {
+  div.code {
     font-family: $monofont;
-    color: #348;
-    background-color: #cdf;
-    border-radius: 0.2rem;
-    padding: 2px 4px;
-    font-size: 0.9rem;
-  }
-
-  pre {
-    font: 1rem $monofont;
-    color: $primary;
-    background-color: $secondarylight;
-    border-radius: 0.3rem;
-    padding: 0.8rem;
-    margin-top: 0;
-    margin-bottom: 1rem;
-    word-wrap: normal;
-    border: solid 1px $primary;
-
-    > code {
-      padding: 0;
-      margin: 0;
-      color: #567482;
-      word-break: normal;
-      white-space: pre;
-      background: transparent;
-      border: 0;
+    margin: 0 0.5rem;
+    pre {
+      font: 1rem $monofont;
+      color: $primary;
+      border-radius: 0.3rem;
+      word-wrap: normal;
+      overflow: auto;
+      padding: 0.75rem;
+      border: solid 1px $primary;
+      .line-numbers {
+        display: none;
+      }
     }
   }
 
@@ -120,7 +106,7 @@
     }
   }
 
-  dl > dt { margin: 1rem 0; }
+  dl > dt { margin: 1rem 0.5rem; }
 
   dl > dd { margin-bottom: 0.5rem; }
 

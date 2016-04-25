@@ -64,7 +64,11 @@ Green Navigation since 2011
 <tr>
   <td label="Term">{{x.term}}</td>
   <td label="Role">{{x.role}}</td>
+  {% if x.link %}
   <td label="Title"><a href="{{x.link}}" target="_blank">{{x.name}}</a></td>
+  {% else %}
+  <td label="Title">{{x.name}}</td>
+  {% endif %}
   <td label="Type">{{x.type}}</td>
   <td label="Lecturer">{{x.lecturer}}</td>
 </tr>
@@ -82,7 +86,7 @@ Furthermore, I have assisted in 27 student theses, primarily around Green Naviga
 
 # <iron-icon icon="grade" /> Grants/Awards
 
-- Doctoral scholarship by the [EKSH Gesellschaft für Energie und Klimaschutz](http://eksh.org){:target="_blank"} (2013-2016).
+- Doctoral scholarship by the [EKSH Gesellschaft für Energie und Klimaschutz Schleswig-Holstein GmbH](http://eksh.org){:target="_blank"} (2013-2016).
 - Capgemini award for the best master degree in computer science at the University of Lübeck (2012).
 - Erasmus scholarship for an exchange semester at the University of Oslo (2011).
 

@@ -6,7 +6,6 @@ icon: dashboard
 
 My Projects
 
-
 > Bla blub.
 > sagte einst ein
 > weiser Mann
@@ -20,13 +19,36 @@ My Projects
 
 Hallo Welt!
 
-```ruby
+{% highlight ruby %}
+def print_hi(name)
+  puts "Hi, #{name}"
+end
+print_hi('Tom')
+{% endhighlight %}
+
+Hallo Welt!
+
+~~~ ruby
+require 'redcarpet' require 'redcarpet' require 'redcarpet' require 'redcarpet'
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html
+~~~
+
+Hallo Welt!
+
+``` ruby
 require 'redcarpet'
 markdown = Redcarpet.new("Hello World!")
 puts markdown.to_html
 ```
 
-Hallo Welt!
+### Abbreviation
+
+This is some text not written in HTML but in another language!
+
+*[another language]: It's called Markdown
+
+*[HTML]: HyperTextMarkupLanguage
 
 ## Math?
 
@@ -36,7 +58,7 @@ $$
 \end{align*}
 $$
 
-a1
+a1asf
 
 $$
 \begin{align*}
@@ -56,3 +78,20 @@ $$
 $$
 
 
+[^1]: Some *crazy* footnote definition.
+
+[^footnote]:
+    > Blockquotes can be in a footnote.
+
+        as well as code blocks
+
+    or, naturally, simple paragraphs.
+
+[^other-note]:       no code block here (spaces are stripped away)
+
+[^codeblock-note]:
+        this is now a code block (8 spaces indentation)
+
+asfasf
+
+asfasf
