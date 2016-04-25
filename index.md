@@ -49,17 +49,28 @@ Green Navigation since 2011
 
 # <iron-icon icon="communication:forum" /> Teaching
 
-|Term|Role|Title|Type|Lecturer|
-|:-|:-|:-|:-|:-|
-| Summer 2015 | Assistant | [Software Engineering](http://www.isp.uni-luebeck.de/courses/ws-20142015/softwaretechnik){:target="_blank"} | practical | Prof. Dr. Martin Leucker |
-| Winter 2014 | Assistant | [Software Engineering II](http://www.isp.uni-luebeck.de/courses/ws-20142015/software-engineering-sweng){:target="_blank"} | lecture | PD Dr. Gerhard Buntrock |
-| Summer 2014 | Assistant <br> Assistant | [Software and System Testing](http://www.isp.uni-luebeck.de/courses/ss-2014/software-und-system-testen){:target="_blank"} and <br> [Software Engineering](http://www.isp.uni-luebeck.de/courses/ws-20132014/softwaretechnik){:target="_blank"} | lecture <br> practical | Prof. Dr. Martin Leucker <br> Prof. Dr. Martin Leucker |
-| Winter 2013 | Assistant | [Software Development Tools and Frameworks](http://www.isp.uni-luebeck.de/courses/ws-20132014/seminar-software-development-tools-and-frameworks){:target="_blank"} | seminar | Prof. Dr. Martin Leucker |
-| Summer 2013 | Assistant <br> Lecturer | [Software Engineering](http://www.isp.uni-luebeck.de/courses/ws-20122013-ss-2013/softwaretechnik){:target="_blank"} <br> [UML Workshop](http://rene.odyne.net/resources/umlworkshop.pdf){:target="_blank"} | practical <br> workshop | Prof. Dr. Martin Leucker <br> -- |
-| Winter 2012 | Assistant | [Software Engineering](http://www.isp.uni-luebeck.de/courses/ws-20122013-ss-2013/softwaretechnik){:target="_blank"} | lecture | Prof. Dr. Martin Leucker |
-| Summer 2012 | Assistant | [Software Engineering](http://www.isp.uni-luebeck.de/courses/ws-20112012-ss-2012/softwaretechnik){:target="_blank"} | practical | Prof. Dr. Martin Leucker |
-| 2008 - 2010 | Student tutor | Linear Algebra and Discrete Structures | lecture | PD Dr. Hanns-Martin Teichert |
-{:class="vitatable"}
+<table class="responsive">
+<thead>
+  <tr>
+  	<th>Term</th>
+  	<th>Role</th>
+  	<th>Title</th>
+  	<th>Type</th>
+  	<th>Lecturer</th>
+  </tr>	
+</thead>
+<tbody>
+{% for x in site.data.teachings %}
+<tr>
+  <td label="Term">{{x.term}}</td>
+  <td label="Role">{{x.role}}</td>
+  <td label="Title"><a href="{{x.link}}" target="_blank">{{x.name}}</a></td>
+  <td label="Type">{{x.type}}</td>
+  <td label="Lecturer">{{x.lecturer}}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
 
 Furthermore, I have assisted in 27 student theses, primarily around Green Navigation.
 

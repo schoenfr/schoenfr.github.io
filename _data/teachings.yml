@@ -1,0 +1,78 @@
+- seq: 1
+  term: Summer 2015
+  role: Assistant
+  name: Software Engineering
+  link: http://www.isp.uni-luebeck.de/courses/ws-20142015/softwaretechnik
+  type: practical
+  lecturer: Prof. Dr. Martin Leucker
+
+- seq: 2
+  term: Winter 2014
+  role: Assistant
+  name: Software Engineering II
+  link: http://www.isp.uni-luebeck.de/courses/ws-20142015/software-engineering-sweng
+  type: lecture
+  lecturer: PD Dr. Gerhard Buntrock
+
+- seq: 3
+  term: Summer 2014
+  role: Assistant
+  name: Software and System Testing
+  link: http://www.isp.uni-luebeck.de/courses/ss-2014/software-und-system-testen
+  type: lecture
+  lecturer: Prof. Dr. Martin Leucker
+
+- seq: 4
+  term: Summer 2014
+  role: Assistant
+  name: Software Engineering
+  link: http://www.isp.uni-luebeck.de/courses/ws-20132014/softwaretechnik
+  type: practical
+  lecturer: Prof. Dr. Martin Leucker
+
+- seq: 5
+  term: Winter 2013
+  role: Assistant
+  name: Software Development Tools and Frameworks
+  link: http://www.isp.uni-luebeck.de/courses/ws-20132014/seminar-software-development-tools-and-frameworks
+  type: seminar
+  lecturer: Prof. Dr. Martin Leucker
+
+- seq: 6
+  term: Summer 2013
+  role: Assistant
+  name: Software Engineering
+  link: http://www.isp.uni-luebeck.de/courses/ws-20122013-ss-2013/softwaretechnik
+  type: practical
+  lecturer: Prof. Dr. Martin Leucker
+
+- seq: 7
+  term: Summer 2013
+  role: Lecturer
+  name: UML Workshop
+  link: http://rene.odyne.net/resources/umlworkshop.pdf
+  type: workshop
+
+- seq: 8
+  term: Winter 2012
+  role: Assistant
+  name: Software Engineering
+  link: http://www.isp.uni-luebeck.de/courses/ws-20122013-ss-2013/softwaretechnik
+  type: lecture
+  lecturer: Prof. Dr. Martin Leucker
+
+- seq: 9
+  term: Summer 2012
+  role: Assistant
+  name: Software Engineering
+  link: http://www.isp.uni-luebeck.de/courses/ws-20112012-ss-2012/softwaretechnik
+  type: practical
+  lecturer: Prof. Dr. Martin Leucker
+
+- seq: 10
+  term: 2008 - 2010
+  role: Student tutor
+  name: Linear Algebra and Discrete Structures
+  type: lecture
+  lecturer: PD Dr. Hanns-Martin Teichert
+
