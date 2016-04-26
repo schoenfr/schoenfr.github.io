@@ -1,6 +1,6 @@
 ---
 title: Whatever
-menu: 0
+order: 0
 ---
 
 asfasf

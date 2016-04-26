@@ -1,17 +1,16 @@
 ---
 title: René Schönfelder
-menu: 1
+order: 1
+menu: Vita
 icon: home
-imports:
- - iron-icon
 ---
 
 Welcome to my homepage. This site is still __under construction__, but feel free to take a look around.
-{:class="onlyscreen"}
+{:.onlyscreen}
 
 # <iron-icon icon icon="account-circle" /> Personal
 
-![René Schönfelder](img/portrait.jpg){:id="portrait"}
+![René Schönfelder](img/portrait.jpg){:#portrait}
 
 You can contact me in german or english via
 

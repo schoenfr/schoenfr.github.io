@@ -1,15 +1,33 @@
-<app-drawer id="drawer">
-<div class="menu">
-{% assign pages = site.pages | sort: "menu" %}
+<app-drawer id="drawer" class="menu">
+
+<h1>Main</h1>
+<div>
+{% assign pages = site.pages | sort: "order" %}
 {% for p in pages %}
-{% unless p.menu <= 0 %}
+{% if p.order > 0 and p.order < 100 %}
   <a href="{{p.url}}"{% if p.url == page.url %} class="selected"{% endif %}>
     <paper-icon-item>
       <iron-icon icon="{{p.icon}}" item-icon></iron-icon>
-      <span>{{p.title}}</span>
+      <span>{{p.menu}}</span>
     </paper-icon-item>
   </a>
-{% endunless %}
+{% endif %}
 {% endfor %}
 </div>
+<hr>
+<h1>Playground</h1>
+<div>
+{% assign pages = site.pages | sort: "order" %}
+{% for p in pages %}
+{% if p.order > 100 and p.order < 200 %}
+  <a href="{{p.url}}"{% if p.url == page.url %} class="selected"{% endif %}>
+    <paper-icon-item>
+      <iron-icon icon="{{p.icon}}" item-icon></iron-icon>
+      <span>{{p.menu}}</span>
+    </paper-icon-item>
+  </a>
+{% endif %}
+{% endfor %}
+</div>
+
 </app-drawer>

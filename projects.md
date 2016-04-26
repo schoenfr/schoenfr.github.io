@@ -1,6 +1,7 @@
 ---
 title: Projects
-menu: 3
+menu: Projects
+order: 3
 icon: dashboard
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: Publications
-menu: 2
+menu: Publications
+order: 2
 icon: maps:local-library
 imports:
  - paper-input

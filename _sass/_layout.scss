@@ -20,6 +20,17 @@ app-header {
 }
 
 .menu {
+  h1 {
+    margin-left: 2rem;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
+  hr {
+    margin-top: 1rem;
+    border: 0;
+    height: 1px;
+    background-color: $primarylight;
+  }
   a {
     color: $primary;
     text-decoration: none;

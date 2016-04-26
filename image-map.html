@@ -1,0 +1,103 @@
+<link rel="import" href="http://rene.odyne.net/libs/polymer/polymer.html">
+
+<dom-module id="image-map">
+  <template>
+    <style>
+    #image {
+      width: 400px;
+      height: 400px;
+      position: relative;
+      background-size: cover;
+    }
+    .marker {
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      margin-left: -3px;
+      margin-top: -3px;
+      border: 1px solid gray;
+      border-radius: 4px;
+    }
+    .selected {
+      border: 2px solid blue;
+      border-radius: 4px;
+    }
+    </style>
+    <div id="image" on-tap="tap" style$="background-image: url({{src}});">
+      <template id="templ1" is="dom-repeat" items="{{markers}}" filter="isNotSelected">
+        <div on-tap="mtap" class="marker" style$="top: {{item.y}}px; left: {{item.x}}px;"></div>
+      </template>
+      <template id="templ2" is="dom-repeat" items="{{markers}}" filter="isSelected">
+        <div on-tap="mtap" class="marker selected" style$="top: {{item.y}}px; left: {{item.x}}px;"></div>
+      </template>
+    </div>
+  </template>
+  <script>
+    
+Polymer({
+  is: "image-map",
+  properties: {
+    markers: {
+      type: Array
+    },
+    multi: Boolean,
+    selectedItem: {
+      type: Object,
+      notify: true
+    }
+  },
+  ready: function() {
+    this.markers = [{x: 0, y: 0}, {x: 200, y: 300}];
+  },
+  tap: function (event, info) {
+    if (event.target == this.$.image) {
+      this.deselectAll();
+      var m = {x: info.sourceEvent.offsetX, y: info.sourceEvent.offsetY, isSelected: true};
+      this.push('markers', m);
+      this.selectedItem = m;
+    }
+  },
+  mtap: function (event, info) {
+    var item = event.model.item;
+    var selected = item.isSelected;
+    if (!this.multi) {
+      this.deselectAll();
+    }
+    item.isSelected = !selected;
+    var count = 0;
+    for (var i = 0; i < this.markers.length; i++) {
+      if (this.markers[i].isSelected) {
+        count++;
+        this.selectedItem = this.markers[i];
+        if (count >= 2) {
+          this.selectedItem = null;
+          break;
+        }
+      }
+    }
+    if (count == 0)
+      this.selectedItem = null;
+    this.$.templ1.render();
+    this.$.templ2.render();
+  },
+  isSelected: function (item) {
+    return item.isSelected;
+  },
+  isNotSelected: function (item) {
+    return !item.isSelected;
+  },
+  deselectAll: function () {
+    this.markers.forEach(function(item) {
+      item.isSelected = false;
+    });
+    this.$.templ1.render();
+    this.$.templ2.render();
+  }
+});
+
+  </script>
+</dom-module>
+
+
+
+ 
