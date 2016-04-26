@@ -1,7 +1,22 @@
-.printtitle { display: none; }
+@media screen {
+  .onlyprint {
+    display: none;
+  }
+}
+
 @include print {
+
+  @page {
+    margin: 2cm;
+    orphans: 4;
+    widows: 2;
+  }
+
+  .onlyscreen {
+    display: none;
+  }
+
   .printtitle {
-  	display: block;
   	text-align: center;
   	font-size: 1.8rem;
   }
@@ -11,13 +26,32 @@
   	color: black !important;
   }
   .content{
-    margin: 1.5cm;
-    font-size: 0.8rem;
+    margin: 0;
+    font-size: 0.5rem;
+    table {
+      td {
+        padding: 0.1rem 0.25rem;
+      }
+    }
+    p, table, figure {
+      // only works in opera and a little in IE
+      page-break-inside: avoid;
+    }
     h1 {
-      border-bottom: 1px solid $primary;
-      font-size: 1rem; 
+      font-size: 0.8rem; 
       background: none;
       color: $primary;
     }
+    h1::after {
+        content: "";
+        display: block;
+        border-bottom: 1px solid $primary;
+        height: 1px;
+        transform: scaleY(0.5);
+      }
   }
+  #portrait {
+    width: 6rem;
+  }
+
 }

@@ -1,31 +1,8 @@
-<meta charset="utf-8">
-
-<title>{{ page.title }}</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/polymer.css">
-
-<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
- 
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Queue(["Typeset",MathJax.Hub,"* /deep/ .content"]);
-</script>
-<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
-
-{% include polymerimports.html %}
-
-<script>
-  function toggle() { this.$.drawer.toggle() }
-  $(document).ready(function() {
-    document.querySelector('#app').toggle = toggle;
-  });
-</script>
-
-<style is="custom-style">
-  app-header {
-    position: fixed;
-    width: 100%;
-    z-index: 4;
-  }
-  app-drawer { z-index: 5; }
-</style>
+<app-header class="header" condenses reveals shadow>
+  <app-toolbar>
+    <paper-icon-button icon="menu" on-tap="toggle"></paper-icon-button>
+    <div class="flex"></div>
+  </app-toolbar>
+  <app-toolbar></app-toolbar>
+  <app-toolbar><div title class="title">{{page.title}}</div></app-toolbar>
+</app-header>

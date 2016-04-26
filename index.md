@@ -7,6 +7,7 @@ imports:
 ---
 
 Welcome to my homepage. This site is still __under construction__, but feel free to take a look around.
+{:class="onlyscreen"}
 
 # <iron-icon icon icon="account-circle" /> Personal
 
@@ -45,7 +46,7 @@ or find me at
 
 # <iron-icon icon="communication:forum" /> Teaching
 
-<table class="responsive">
+<table class="responsive" style="width: 100%">
 <thead>
   <tr>
   	<th>Term</th>

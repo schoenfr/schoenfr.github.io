@@ -1,75 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  {% include header.html %}
-
-  <script>
-
-Array.prototype.max = function() {
-  return Math.max.apply(null, this);
-}
-Array.prototype.min = function() {
-  return Math.min.apply(null, this);
-}
-
-$(document).ready(function() {
-
-  function range(start, stop){
-    var a=[start], b=start;
-    while(b<stop){b+=1;a.push(b)}
-    return a;
-  };
-
-  var a = range(1, 6);
-  console.log(a.join());
-  var n = a.length;
-  var i = n - 1
-
-  var maxi = 140;
-  while (maxi-- > 0) {
-    var poss = range(a[i - 1] + 1, n + 1);
-    for (var x = 1; x <= i; x++) {
-      var ind = poss.indexOf(a[x - 1]);
-      if (ind >= 0)
-        poss[ind] = n + 1;
-    }
-    var k = poss.min();
-    if (k <= n) {
-      a[i - 1] = k;
-      if (i == n) {
-        console.log(a.join());
-      }
-      if (i < n) {
-        a[i] = 0;
-        i = i + 1;
-      }
-    }
-    if (k == n + 1) {
-      i = i - 1;
-    }
-    if (i < 1)
-      break;
-  }
-
-});
-  </script>
-
+  {% include meta.html %}
 </head>
 <body class="fullbleed vertical layout">
   <template is="dom-bind" id="app">
-    <app-header class="header" condenses reveals shadow>
-      <app-toolbar>
-        <paper-icon-button icon="menu" on-tap="toggle"></paper-icon-button>
-        <div class="flex"></div>
-      </app-toolbar>
-      <app-toolbar></app-toolbar>
-      <app-toolbar><div title class="title">{{page.title}}</div></app-toolbar>
-    </app-header>
-    <app-drawer id="drawer">
-      {% include menu.html %}
-    </app-drawer>
+    {% include header.html %}
+    {% include menu.html %}
     <div id="content" class="content" style="flex: 1 0 auto;">
-      <div class="printtitle">{{page.title}}</div>
+      <div class="onlyprint printtitle">{{page.title}}</div>
       {{ content }}
     </div>
     {% include footer.html %}
