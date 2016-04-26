@@ -8,6 +8,8 @@ $secondarylight: #fed;
 $stdfont: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $monofont: Consolas, "Liberation Mono", Menlo, Courier, monospace;
 
+body { font-family: $stdfont; }
+
 @mixin background {
   background-image: url(../img/earth_small.jpg);
   background-size: cover;

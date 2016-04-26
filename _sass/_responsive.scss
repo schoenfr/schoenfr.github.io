@@ -1,6 +1,7 @@
 $break-small: 720px; // 40rem
 $break-large: 1120px; // 70rem
 
+// @media screen is the opposite of @include print.
 @mixin print {
 	@media only print {
 		@content;

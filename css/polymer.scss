@@ -2,27 +2,23 @@
 menu: 0
 ---
 
+// Some definitions for referencing different media types
 @import "responsive";
 
-@include print {
-  a {
-  	text-decoration: none !important;
-  	color: black !important;
-  }
-}
-
-body {
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
-}
-
+// Shared variables and colors
 @import "shared";
-@import "header";
-@import "content";
-@import "footer";
-@import "menu";
-@import "print";
 
+// General layout of the site
+@import "layout";
+
+// Styling the main content
+@import "content";
+
+// Syntax highlighting for markdown code blocks
 @import "syntax";
 
+// Special elements somewhere on the site
 @import "various";
+
+// Print format
+@import "print";

@@ -5,8 +5,10 @@
   	text-align: center;
   	font-size: 1.8rem;
   }
-  .header {
-  	display: none;
+  .header, .footer { display: none !important; }
+  a {
+  	text-decoration: none !important;
+  	color: black !important;
   }
   .content{
     margin: 1.5cm;
