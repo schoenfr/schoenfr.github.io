@@ -10,7 +10,7 @@ imports:
 
 <div class="academia">
 <div class="thumb">
-<img src="{{x.thumb}}">
+<a href="{{x.link}}" target="_blank"><img src="{{x.thumb}}"></a>
 </div>
 <div markdown="1" class="reference">
 
