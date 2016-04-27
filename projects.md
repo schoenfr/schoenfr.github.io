@@ -5,6 +5,9 @@ order: 3
 icon: dashboard
 ---
 
+Welcome to my homepage. This site is still __under construction__, but feel free to take a look around.
+{:.onlyscreen}
+
 My Projects
 
 > Bla blub.

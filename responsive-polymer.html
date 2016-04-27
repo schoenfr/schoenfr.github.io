@@ -1,0 +1,44 @@
+<link rel="import" href="http://rene.odyne.net/libs/polymer/polymer.html">
+
+<dom-module id="responsive-polymer">
+  <template>
+    <iron-media-query full query="not all and (min-width: 700px)" query-matches="{{inphone}}"></iron-media-query>
+    <iron-media-query full query="not all and (max-width: 1000px)" query-matches="{{indesktop}}"></iron-media-query>
+    <iron-media-query full query="screen and (min-width: 700px) and (max-width: 1000px)" query-matches="{{intablet}}"></iron-media-query>
+    <iron-media-query full query="print" query-matches="{{print}}"></iron-media-query>
+  </template>
+
+  <script>
+  Polymer({
+    is: "responsive-polymer",
+    properties: {
+      inphone: Boolean,
+      intablet: Boolean,
+      indesktop: Boolean,
+      value: {
+        type: String,
+        value: "bla",
+        computed: 'computeClass(inphone, intablet, indesktop)',
+        notify: true
+      }
+    },
+    computeClass: function(inphone, intablet, indesktop) {
+      var res = this.value;
+      if (this.print)
+        res = "print";
+      else if (inphone)
+        res = "phone";
+      else if (intablet)
+        res = "tablet";
+      else if (indesktop)
+        res = "desktop";
+      return res;
+    }
+  });
+
+  </script>
+</dom-module>
+
+
+
+ 

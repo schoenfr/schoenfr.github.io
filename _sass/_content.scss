@@ -1,12 +1,13 @@
-.content {
+#content {
 
   // 4rem for each toolbar in fixed header
   margin-top: 12rem;
 
-  @include phone { padding: 1rem 1rem; }
-  @include tablet { padding: 2rem 4rem; }
-  @include desktop {
-    width: $break-large - 128px; // 70rem - 8rem
+  &.phone { padding: 1rem 1rem; }
+  &.tablet { padding: 2rem 4rem; }
+  &.desktop {
+    min-width: 1000px - 128px; // 70rem - 8rem
+    max-width: 1024px;
     padding: 2rem 4rem;
     margin-left: auto;
     margin-right: auto;
@@ -22,21 +23,23 @@
     font-size: 1.25rem;
     line-height: 2.5rem;
     color: $primary;
-    border-radius: 0.25rem;
+//    border-radius: 0.25rem;
     padding: 0 0.25rem;
 
     > iron-icon {
       padding: 0 0.5rem 3px 0.5rem;
       z-index: 0;
     }
-
-    @include phone {
+  }
+  &.phone {
+    h1, h2, h3, h4, h5, h6 {
       font-size: 1rem;
       margin: 1rem 0rem;
     }
   }
 //  h1 { @include background; }
-  h1 { @include shadow; @include background; }
+//  h1 { @include shadow; @include background; }
+  h1 { border-bottom: 1px solid $primarylight; }
   p { margin: 1rem 0.5rem; }
 
   .highlight {
@@ -69,8 +72,8 @@
     }
   }
 
-  table.responsive {
-    @include phone {
+  &.phone {
+    table.responsive {
       width: 100%;
       thead { display: none; }
       tbody {

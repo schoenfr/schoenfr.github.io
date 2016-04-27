@@ -1,24 +1,26 @@
 ---
-title: René Schönfelder
 order: 1
 menu: Vita
 icon: home
 ---
 
-Welcome to my homepage. This site is still __under construction__, but feel free to take a look around.
-{:.onlyscreen}
+<div class="cvtitle" markdown="1">
 
-# <iron-icon icon icon="account-circle" /> Personal
+![René Schönfelder](img/portrait.jpg)
+{:#portrait}
 
-![René Schönfelder](img/portrait.jpg){:#portrait}
+René Schönfelder
+{:#name}
+
+Software&nbsp;Engineer&nbsp;and Research&nbsp;Associate
+{:#profession}
+
+</div>
 
 You can contact me in german or english via
 
 | Email  | [schoenfelder2211@gmail.com](mailto:schoenfelder2211@gmail.com) |
 | Skype  | reneschoenfelder |
-
-or find me at
-
 | Github | [schoenfr](http://github.com/schoenfr){:target="_blank"} |
 | XING | [René Schönfelder](http://www.xing.com/profile/Rene_Schoenfelder3){:target="_blank"} |
 
@@ -58,7 +60,7 @@ or find me at
 <tbody>
 {% for x in site.data.teachings %}
 <tr>
-  <td label="Term">{{x.term}}</td>
+  <td label="Term" style="white-space: nowrap;">{{x.term}}</td>
   <td label="Role">{{x.role}}</td>
   {% if x.link %}
   <td label="Title"><a href="{{x.link}}" target="_blank">{{x.name}}</a></td>

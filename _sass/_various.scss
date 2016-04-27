@@ -1,25 +1,83 @@
-#portrait {
-
-  @include shadow;
-  float: right;
-  width: 9rem;
-  margin: 0 1rem 1rem 1rem;
-
-  @include phone {
-    float: initial;
-    margin: 0 auto;
-    display: block;
+@media screen {
+.cvtitle {
+  position: relative;
+  color: $primary;
+  #name {
+    font-size:3rem;
+    font-weight:bold;
+    margin-bottom:0;
+  }
+  #profession {
+    font-size:2rem;
+    margin-top:0;
+  }
+  #portrait {
+    width: 9rem;
+    img { @include shadow; }
   }
 }
+.desktop .cvtitle {
+  #portrait {
+    float: right;
+    margin: 1rem;
+  }
+}
+.tablet .cvtitle {
+  text-align: center;
+  p, img { margin: 0 auto !important;}
+  #name { font-size: 2rem; }
+  #profession { font-size: 1.25rem; }
+}
+.phone .cvtitle {
+  text-align: center;
+  p, img { margin: 0 auto !important;}
+  #name { font-size: 1.25rem; }
+  #profession { font-size: 1.2rem; }
+}
+}
+.print .cvtitle {
+  #name { font-size: 1rem; }
+  #profession { font-size: 0.75rem; }
+  #portrait {
+    float: right;
+    margin: 0;
+    width: 6rem;
+  }
+}
+
+/*  #portrait {
+      width: 9rem;
+      margin: 1rem auto 1rem auto;
+      img {
+        @include shadow;
+      }
+  }
+  @include nonphone {
+    &:before {
+      content: '';
+      float: right;
+      display: block;
+      width: 9rem;
+      height: 20rem;
+      margin: 1rem;
+    }
+    #portrait {
+      position: absolute;
+      top: 0;
+      right: 0;
+/*      @include phone {
+        float: initial;
+        margin: 0 auto;
+        display: block;
+      }*/
+/*    }
+  }*/
+
 
 .academia {
   margin: 2em 1rem;
   padding: 0rem;
   display: flex;
-  @include phone {
-    flex-direction: column;
-    align-items: center;
-  }
   .thumb {
   	margin: 1rem 2rem;
     min-width: 10rem;
@@ -32,4 +90,8 @@
     content: "Abstract: ";
     font-weight: bold;
   }
+}
+.phone .academia {
+  flex-direction: column;
+  align-items: center;
 }

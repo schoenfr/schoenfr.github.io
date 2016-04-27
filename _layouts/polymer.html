@@ -5,10 +5,12 @@
 </head>
 <body class="fullbleed vertical layout">
   <template is="dom-bind" id="app">
+    {% raw %}
+    <responsive-polymer value="{{value}}"></responsive-polymer>
+    {% endraw %}
     {% include header.html %}
     {% include menu.html %}
-    <div id="content" class="content" style="flex: 1 0 auto;">
-      <div class="onlyprint printtitle">{{page.title}}</div>
+    <div id="content" class$="[[value]]" style="flex: 1 0 auto;">
       {{ content }}
     </div>
     {% include footer.html %}
