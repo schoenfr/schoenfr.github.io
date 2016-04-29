@@ -6,7 +6,7 @@ icon: home
 
 <div class="cvtitle" markdown="1">
 
-![René Schönfelder](img/portrait.jpg)
+![René Schönfelder](../img/portrait.jpg)
 {:#portrait}
 
 René Schönfelder
@@ -50,12 +50,12 @@ You can contact me in german or english via
 <table class="responsive" style="width: 100%">
 <thead>
   <tr>
-  	<th>Term</th>
-  	<th>Role</th>
-  	<th>Title</th>
-  	<th>Type</th>
-  	<th>Lecturer</th>
-  </tr>	
+    <th>Term</th>
+    <th>Role</th>
+    <th>Title</th>
+    <th>Type</th>
+    <th>Lecturer</th>
+  </tr> 
 </thead>
 <tbody>
 {% for x in site.data.teachings %}

@@ -1,0 +1,28 @@
+<link rel="import" href="http://rene.odyne.net/libs/polymer/polymer.html">
+
+{% for p in page.imports %}
+<link rel="import" href="{{p}}">
+{% endfor %}
+
+<dom-module id="{{ page.url | slugify }}">
+  <template>
+    <style>
+    </style>
+
+    {{ content }}
+
+  </template>
+
+  <script>
+  Polymer({
+    is: "{{ page.url | slugify }}",
+    properties: {
+      title: {
+        type: String,
+        value: "{{page.title}}",
+        notify: true
+      }
+    }
+  });
+  </script>
+</dom-module>

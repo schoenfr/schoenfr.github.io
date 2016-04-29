@@ -13,4 +13,5 @@
 - url: http://rene.odyne.net/libs/paper-tabs/paper-tabs.html
 - url: http://rene.odyne.net/libs/app-layout/app-scroll-effects/effects/waterfall.html
 - url: http://rene.odyne.net/libs/iron-media-query/iron-media-query.html
-- url: /responsive-polymer.html
+- url: /util/responsive-polymer.html
+- url: /util/component-loader.html

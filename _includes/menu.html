@@ -5,7 +5,7 @@
 {% assign pages = site.pages | sort: "order" %}
 {% for p in pages %}
 {% if p.order > 0 and p.order < 100 %}
-  <a href="{{p.url}}"{% if p.url == page.url %} class="selected"{% endif %}>
+  <a href="javascript:request('{{p.url}}', '{{p.url | slugify }}')"{% if p.url == page.url %} class="selected"{% endif %}>
     <paper-icon-item>
       <iron-icon icon="{{p.icon}}" item-icon></iron-icon>
       <span>{{p.menu}}</span>
@@ -20,7 +20,7 @@
 {% assign pages = site.pages | sort: "order" %}
 {% for p in pages %}
 {% if p.order > 100 and p.order < 200 %}
-  <a href="{{p.url}}"{% if p.url == page.url %} class="selected"{% endif %}>
+  <a href="javascript:request('{{p.url}}', '{{p.url | slugify }}')"{% if p.url == page.url %} class="selected"{% endif %}>
     <paper-icon-item>
       <iron-icon icon="{{p.icon}}" item-icon></iron-icon>
       <span>{{p.menu}}</span>
@@ -29,5 +29,6 @@
 {% endif %}
 {% endfor %}
 </div>
+<hr>
 
 </app-drawer>

@@ -5,7 +5,7 @@ title: Efficient Profile Routing for Electric Vehicles
 link: http://dx.doi.org/10.1007/978-3-319-11167-4_3
 published: IOV - Internet of Vehicles
 pages: 21-30
-thumb: img/publication2.png
+thumb: ../img/publication2.png
 ---
 
 This paper introduces a powerful, efficient and generic framework for optimal routing of electric vehicles in the setting of flexible edge cost functions and arbitrary initial states.

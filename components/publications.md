@@ -1,10 +1,9 @@
 ---
 title: Publications
 menu: Publications
+component: rschoenfelder-publications
 order: 2
 icon: maps:local-library
-imports:
- - paper-input
 ---
 
 {% for x in site.publications %}

@@ -6,7 +6,8 @@ defaults:
     scope:
       path: ""
     values:
-      layout: "polymer"
+      component: ""
+      layout: "component"
 
 collections:
   - publications

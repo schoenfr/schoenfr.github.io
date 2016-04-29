@@ -2,6 +2,13 @@
 <html>
 <head>
   {% include meta.html %}
+<script>
+function request(url, name) {
+  console.log("requesting " + url + " --> " + name)
+  $("#loader")[0].request(url, name);
+  $("#drawer")[0].close();
+}
+</script>
 </head>
 <body class="fullbleed vertical layout">
   <template is="dom-bind" id="app">
@@ -11,7 +18,11 @@
     {% include header.html %}
     {% include menu.html %}
     <div id="content" class$="[[value]]" style="flex: 1 0 auto;">
-      {{ content }}
+      {% raw %}
+      <component-loader title="{{title}}" id="loader">
+      {% endraw %}
+        {{ content }}
+      </component-loader>
     </div>
     {% include footer.html %}
   </template>
