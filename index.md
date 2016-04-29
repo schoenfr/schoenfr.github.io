@@ -12,7 +12,7 @@ icon: home
 René Schönfelder
 {:#name}
 
-Software&nbsp;Engineer&nbsp;and Research&nbsp;Associate
+Software&nbsp;Engineer&nbsp;and Research&nbsp;Assistant
 {:#profession}
 
 </div>
