@@ -1,14 +1,19 @@
 <link rel="import" href="http://rene.odyne.net/libs/polymer/polymer.html">
 
 <dom-module id="component-loader">
-  <template>
-    <div id="container"><content></content></div>
-  </template>
-  <script>
+<template>
+  <div id="container"><content></content></div>
+</template>
+<script>
+
   Polymer({
     is: "component-loader",
     properties: {
       usecache: {
+        type: Boolean,
+        value: true
+      },
+      fakeloading: {
         type: Boolean,
         value: true
       },
@@ -22,30 +27,35 @@
       }
     },
     request: function(url, name) {
-      var elem = this.cache[name];
+      var tagName = name.toUpperCase();
+      var elem = this.cache[tagName];
       if (this.usecache && elem) {
         $(this.$.container).empty();
-        Polymer.dom(this.$.container).appendChild(elem);
-        Polymer.dom(this.$.container).flush();
-        this.title = elem.title;
+        setTimeout(this.setElement.bind(this, elem), 100);
       } else {
-        this.importHref(url, function(e) {
-          elem = document.createElement(name);
-          $(this.$.container).empty();
-          Polymer.dom(this.$.container).appendChild(elem);
-          Polymer.dom(this.$.container).flush();
-          if (this.usecache)
-            this.cache[name] = elem;
-          this.title = elem.title;
-        }, function(e) {
-          console.log("error", e);
-        });
+        setTimeout(this._import.bind(this, url, name), 0);
       }
+    },
+    _import: function(url, name) {
+      var that = this;
+      this.importHref(url, function(e) {
+        elem = document.createElement(name);
+        $(this.$.container).empty();
+        this.setElement(elem);
+      }.bind(this), function(e) {
+        console.log("error", e);
+      });
+    },
+    setElement: function(elem) {
+      Polymer.dom(this.$.container).appendChild(elem);
+      Polymer.dom(this.$.container).flush();
+      if (this.usecache)
+        this.cache[elem.tagName] = elem;
+      this.title = elem.title;
     }
   });
 
-  </script>
+</script>
 </dom-module>
 
 
- 

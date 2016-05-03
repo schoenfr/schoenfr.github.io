@@ -3,10 +3,13 @@
 <head>
   {% include meta.html %}
 <script>
+
+$(window).trigger('resize');
+
 function request(url, name) {
-  console.log("requesting " + url + " --> " + name)
-  $("#loader")[0].request(url, name);
   $("#drawer")[0].close();
+  $("#loader")[0].request(url, name);
+//  $(document).scrollTop(0);
 }
 </script>
 </head>
