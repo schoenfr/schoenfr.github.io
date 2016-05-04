@@ -17,20 +17,21 @@ Software&nbsp;Engineer&nbsp;and Research&nbsp;Assistant
 
 </div>
 
-You can contact me in german or english via
+You can contact me in german, english or simple norwegian via
 
 | Email  | [schoenfelder2211@gmail.com](mailto:schoenfelder2211@gmail.com) |
 | Skype  | reneschoenfelder |
 | Github | [schoenfr](http://github.com/schoenfr){:target="_blank"} |
 | XING | [René Schönfelder](http://www.xing.com/profile/Rene_Schoenfelder3){:target="_blank"} |
+{:.vitatable}
 
 # <iron-icon icon="social:school" /> Education
 
-| Currently | University of Lübeck <br> Working on a PhD about Algebraic Routing for Green Navigation |
-| 2014 | Certificate for University Didactics - University of Lübeck |
-| 2012 | M.Sc. Computer Science - University of Lübeck <br> Thesis: [Stochastic Models and Acceleration Techniques for Green Routing in Car Navigation Systems](http://rene.odyne.net/resources/ma_schoenfelder.pdf){:target="_blank"} |
-| 2009 | B.Sc. Computer Science - University of Lübeck <br> Thesis: Structural Properties of m-Step Graphs |
-{:class="vitatable"}
+| Currently | [Institute for Software Engineering and Programming Languages](https://www.isp.uni-luebeck.de/){:target="_blank"}, University of Lübeck <br> Working on a Doctoral Thesis about Algebraic Routing for Green Navigation |
+| 2014 | Dozierenden-Service-Center, University of Lübeck <br> Certificate for University Didactics <br> Professional training in didactics, methods, exams, media, leading and diversity amounting over 20 weekend courses |
+| 2012 | University of Lübeck <br> Computer Science, M.Sc. <br> Thesis: [Stochastic Models and Acceleration Techniques for Green Routing in Car Navigation Systems](http://rene.odyne.net/resources/ma_schoenfelder.pdf){:target="_blank"} |
+| 2009 | University of Lübeck <br> Computer Science, B.Sc. <br> Thesis: Structural Properties of m-Step Graphs |
+{:.vitatable}
 
 # <iron-icon icon="favorite" /> Interests
 
@@ -40,10 +41,11 @@ You can contact me in german or english via
 - Teaching and Mentoring
 - ... and my friends and family
 
-# <iron-icon icon="places:business-center" /> Experience
+# <iron-icon icon="places:business-center" /> Job Experience
 
-| Since 2015 | [WMD Vertrieb GmbH](http://www.wmd.de/){:target="_blank"} |
-| 2011 - 2016 | [Green Navigation](http://www.isp.uni-luebeck.de/research/projects/green-navigation){:target="_blank"} |
+| Since 07/2015 | [WMD Vertrieb GmbH](http://www.wmd.de/){:target="_blank"}, Ahrensburg <br> Student assistant <br> Front- and backend development for the [WMD xSuite 365](http://www.wmd.de/dyn/epctrl/mod/wmd000224/cat/wmd000439/pri/wmd){:target="_blank"} |
+| Since 03/2012 | Institute for Software Engineering and Programming Languages, University of Lübeck <br> Scientific staff and doctoral student <br> [Green Navigation](http://www.isp.uni-luebeck.de/research/projects/green-navigation){:target="_blank"} |
+{:.vitatable}
 
 # <iron-icon icon="communication:forum" /> Teaching
 
@@ -90,6 +92,7 @@ Furthermore, I have assisted in a series of student theses and managed various p
 - Capgemini award for the best master degree in computer science at the University of Lübeck (2012).
 - Erasmus scholarship for an exchange semester at the University of Oslo (2011).
 
-# <iron-icon icon="more-horiz" /> Other Activities
+# <iron-icon icon="more-horiz" /> Activities
 
+- Senate Panel MINT at the University of Lübeck, student representative (2014/2015).
 - [Arbeiterkind.de](http://arbeiterkind.de){:target="_blank"}, mentoring *first-generation students* (2011-2015).

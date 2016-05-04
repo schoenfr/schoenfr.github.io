@@ -45,6 +45,17 @@
   }
 }
 
+.vitatable {
+  td {
+    vertical-align: top;
+  }
+  tr > td:first-child {
+    white-space: nowrap;
+    text-align: center;
+    min-width: 8rem;
+  }
+}
+
 /*  #portrait {
       width: 9rem;
       margin: 1rem auto 1rem auto;
