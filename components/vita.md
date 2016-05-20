@@ -6,7 +6,7 @@ icon: home
 
 <div class="cvtitle" markdown="1">
 
-![René Schönfelder](../img/portrait.jpg)
+![René Schönfelder](../img/rene2016.jpg)
 {:#portrait}
 
 René Schönfelder

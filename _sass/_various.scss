@@ -12,10 +12,11 @@
     margin-top:0;
   }
   #portrait {
-    width: 9rem;
+    width: 12rem;
     img { @include shadow; }
   }
 }
+
 .desktop .cvtitle {
   #portrait {
     float: right;
