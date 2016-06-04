@@ -1,7 +1,8 @@
 #content {
 
   // 4rem for each toolbar in fixed header
-  margin-top: 12rem;
+  //margin-top: 12rem;
+  margin-top: 4rem;
 
   &.phone { padding: 1rem 1rem; }
   &.tablet { padding: 2rem 4rem; }
@@ -14,6 +15,10 @@
   }
 
   > :first-child { margin-top: 0; }
+
+  a {
+  	text-decoration: none;
+  }
 
   img { max-width: 100%; }
 
